@@ -3,7 +3,7 @@ from typing import TypedDict
 
 app = FastAPI()
 
-class BubbleTea(TypeDict):
+class BubbleTea(TypedDict):
     id: int
     name: str
     temperature: float
@@ -25,7 +25,7 @@ def read_root():
 # 🔹 GET hardcodeado de Bubble Tea
 @app.get("/bubble-tea")
 def get_bubble_tea():
-    return bubbleTeas
+    return filter_inactive_bubble_teas()
 
 # filter inactive bubble teas
 def filter_inactive_bubble_teas() -> list[BubbleTea]:
