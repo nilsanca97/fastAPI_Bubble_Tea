@@ -15,6 +15,7 @@ bubbleTeas: list[BubbleTea] = [
     {"id": 2, "name": "Taro Bubble Tea", "temperature": 4.0, "price": 4.00, "active": True}, 
     {"id": 3, "name": "Green Tea Bubble Tea", "temperature": 3.0, "price": 3.75, "active": True},
     {"id": 4, "name": "Black Tea Bubble Tea", "temperature": 2.0, "price": 3.25, "active": False},
+    #prueva 
 ]
 
 @app.get("/")
